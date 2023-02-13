@@ -3,12 +3,13 @@ import React from 'react'
 
 export default function Logo(props) {
 
-  const {type='default'} = props;
-  console.log(type)
-  return (
+  const {type = 'default'} = props;
 
-    <img src={type==='muted'? "./images/logo-muted.svg":"./images/logo.svg"} alt="" />
-    
+  return (
+    <>
+    {type==='default' && <img src="/images/logo.svg" alt="" />}
+    {type==='muted'  && <img src="/images/logo-muted.svg" alt="" />}
+    </>
   )
 }
 
