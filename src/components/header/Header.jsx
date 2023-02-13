@@ -3,6 +3,7 @@ import Logo from "../logo/Logo";
 import { Grid, Container, Button, Input,startAdornment,InputAdornment,InputProps } from "@mui/material";
 
  import styles from "./Header.module.scss";
+import { StayPrimaryLandscapeSharp } from "@mui/icons-material";
 
 
 export default function Header() {
@@ -24,8 +25,8 @@ export default function Header() {
        
       </Grid>
       <Grid className={styles.buttonGrid} item xs={5}>
-        <Button sx={{ color: 'white'}} className={styles.textBtn} variant="text">Home</Button>
-        <Button sx={{ color: 'white'}} variant="text">Activity</Button>
+        <Button   className={styles.textBtn} variant="text">Home</Button>
+        <Button className={styles.textBtn}  variant="text">Activity</Button>
         <Button className={styles.containedBtn} variant="contained">Explore</Button>
       </Grid>
     </Grid>

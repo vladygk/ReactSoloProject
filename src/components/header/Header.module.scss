@@ -14,7 +14,7 @@
   background-image: url("./images/searchIcon.svg");
   background-repeat: no-repeat;
   background-size:1vw;
-  background-position: left 1vw top 1vh;
+  background-position: left 1vw top 1.2vh;
 }
 .input::placeholder {
   text-indent: 2vw;
@@ -47,4 +47,9 @@
 
 .containedBtn {
   height: 3vh;
+  
+}
+
+.textBtn{
+  color: white !important;
 }
