@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../logo/Logo";
-import { Grid, Container, Button, Input,startAdornment,InputAdornment,InputProps } from "@mui/material";
+import { Grid, Container, Button, TextField,startAdornment,InputAdornment,InputProps } from "@mui/material";
 
  import styles from "./Header.module.scss";
-import { StayPrimaryLandscapeSharp } from "@mui/icons-material";
+ import SearchIcon from '@mui/icons-material/Search';
 
 
 export default function Header() {
@@ -16,12 +16,20 @@ export default function Header() {
       </Grid>
       <Grid className={styles.inputGrid} item xs={6}>
         
-          <input
-            className={styles.input}
-            placeholder="Find items, users and activities"
-            
-           
-          />
+      <TextField
+      fullWidth
+        id="input-with-icon-textfield"
+        className={styles.input}
+        placeholder="Find items, users and activities"
+        InputProps={{
+          startAdornment: (
+            <InputAdornment position="start">
+              <SearchIcon style={{ color: "white" }} />
+            </InputAdornment>
+          ),
+        }}
+        variant="standard"
+      />
        
       </Grid>
       <Grid className={styles.buttonGrid} item xs={5}>
