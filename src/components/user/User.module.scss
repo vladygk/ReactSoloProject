@@ -1,0 +1,31 @@
+@import "../../styles/colors.scss";
+
+.user{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    line-height: 0.7rem;
+}
+
+.name{
+    color: $text_primary;
+   font-size: 0.7rem; 
+  margin: 0;
+    
+}
+
+.info{
+    color: $secondary_main;
+    font-size: 0.7rem; 
+    
+    
+    overflow: hidden;
+}
+
+.avatar{ 
+    
+    
+}
+
