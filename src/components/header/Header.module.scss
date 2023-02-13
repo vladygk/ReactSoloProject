@@ -1,0 +1,50 @@
+@use "../../styles/colors";
+
+.input {
+  background-color: #0c0c14;
+
+  height: 4vh;
+  border-radius: 60px;
+  width: 20vw;
+  color: white;
+  font-size: 2vh;
+  font-size: 1.5vh;
+  text-indent: 1vw;
+  border-style: none;
+  background-image: url("./images/searchIcon.svg");
+  background-repeat: no-repeat;
+  background-size:1vw;
+  background-position: left 1vw top 1vh;
+}
+.input::placeholder {
+  text-indent: 2vw;
+  font-size: 1.5vh;
+}
+
+.wrapper {
+  background-color: #191828;
+}
+
+.container {
+  display: flex !important;
+ 
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+}
+.logoGrid {
+  padding: 1vh;
+}
+.inputGrid {
+  padding-left: 5vw;
+  
+}
+
+.buttonGrid {
+  padding-left: 5vw;
+  
+}
+
+.containedBtn {
+  height: 3vh;
+}
