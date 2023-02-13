@@ -6,5 +6,8 @@ import Avatar from "../src/components/avatar/Avatar";
 
 export default function Index() {
   //return <User name="Vaskoi" verified={true} info="134 items"/>;
-  return <User name="Vasko" info="144 items" verified={true}/>
+  return <div style={{display:"flex",flexDirection:"row",justifyContent:"space-evenly",padd:"center"}}>
+      <User name="Vasko" info="144 items" verified={true}/>
+     
+  </div>
 }
