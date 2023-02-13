@@ -7,7 +7,7 @@ import millify from "millify";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 export default function Card({
   name,
-  likes,
+  likes = 0,
   mediaUrl = "./images/nft.jpg",
   user: {
     avatar: { url },
