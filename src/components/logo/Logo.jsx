@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Logo(props) {
+export default function Logo(props) {
+  const {type} = props; 
+  
   return (
-    <img src={props.type==='muted'? "./images/logo-muted.svg":"./images/logo.svg"} alt="" />
+    <img src={type==='muted'? "./images/logo-muted.svg":"./images/logo.svg"} alt="" />
   )
 }
 
-export default Logo;
