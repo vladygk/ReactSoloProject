@@ -22,6 +22,7 @@ export default function Index() {
             mediaUrl: "",
             price: 1,
             currency: "ETH",
+            timeLeft: 200000
           },
           {
             name: "Judie",

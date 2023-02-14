@@ -5,6 +5,8 @@ import { Chip } from "@mui/material";
 import styles from "./Card.module.scss";
 import millify from "millify";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import Countdown from 'react-countdown';
+import CircleIcon from '@mui/icons-material/Circle';
 export default function Card({
   name,
   likes = 0,
@@ -15,13 +17,16 @@ export default function Card({
   },
   price,
   currency,
+  timeLeft
 }) {
   return (
     <div >
       <MCard className={styles.card} >
         <div className={styles.avatar}>  <Avatar url={url} size={75} verified={verified} /></div>
-      
 
+        {timeLeft&&<div className={styles.timerWrapper}><Countdown className={styles.timer} date={Date.now() + timeLeft} /></div>}
+
+        {timeLeft&&<div className={styles.badge}><CircleIcon sx={{scale:"0.6"}}/>Live</div>}
         <img className={styles.media} src={mediaUrl} alt="" />
         <div className={styles.title}>{name}</div>
         <div className={styles.price}>{price} {currency}</div>

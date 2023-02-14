@@ -17,15 +17,15 @@
   position: absolute;
   top:88%;
   left:4%;
-  font-size: 2em;
+  font-size: 1.75em;
   color:#00ff21 !important;
   font-weight: 700;
 }
 .title{
   position: absolute;
-  top:77%;
+  top:80%;
   left:4%;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
 }
 .avatar{
@@ -44,5 +44,40 @@
   left:70%;
   color:#00ff21 !important;
   border: 2px solid #00ff21 !important;
+}
+
+.badge{
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top:23%;
+  left:10%;
+  background-color: #00ff21;
+  color:black;
+  width: 20%;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.timerWrapper{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ff21;
+  top:71%;
+  width: 90%;
+  height: 8%;
+  left:5%;
+  z-index: 2;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+}
+.timer{
+  color:black;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
