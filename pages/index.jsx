@@ -6,63 +6,12 @@ import Avatar from "../src/components/avatar/Avatar";
 import Card from "../src/components/card/Card";
 import Trending from "../src/components/trending/Trending";
 import Auctions from "../src/components/auctions/Auctions"
+import Footer from "../src/components/footer/Footer"
 export default function Index() {
   //return <User name="Vaskoi" verified={true} info="134 items"/>;
   return (
     <div>
-      <Auctions
-        cards={[
-          {
-            name: "Ivy",
-            user: {
-              avatar: {
-                url: "",
-              },
-              verified: true,
-            },
-            mediaUrl: "",
-            price: 1,
-            currency: "ETH",
-            timeLeft: 200000
-          },
-          {
-            name: "Judie",
-            user: {
-              avatar: {
-                url: "",
-              },
-              verified: true,
-            },
-            mediaUrl: "",
-            price: 2.3,
-            currency: "ETH",
-          },
-          {
-            name: "Juniper",
-            user: {
-              avatar: {
-                url: "",
-              },
-              verified: true,
-            },
-            mediaUrl: "",
-            price: 5,
-            currency: "ETH",
-          },
-          {
-            name: "Maple",
-            user: {
-              avatar: {
-                url: "",
-              },
-              verified: true,
-            },
-            mediaUrl: "",
-            price: 10,
-            currency: "ETH",
-          },
-        ]}
-      />
+      <Footer/>
     </div>
   );
 }

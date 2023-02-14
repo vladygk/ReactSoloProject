@@ -1,0 +1,51 @@
+@use "../../styles/colors";
+
+.text {
+  display: flex;
+  height: 4vh;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
+  color: colors.$text_disabled;
+  font-size: 0.9em !important;
+  
+}
+.input::placeholder {
+  text-indent: 2vw;
+  font-size: 1.5vh;
+}
+
+.wrapper {
+  background-color: #191828;
+}
+
+.container {
+  display: flex !important;
+  padding: 0 !important;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+}
+.logoGrid {
+  display: flex;
+  justify-content: center;
+  padding: 1vh;
+}
+.inputGrid {
+  display: flex;
+
+  justify-content: center;
+  
+  
+}
+
+.buttonGrid {
+  padding-left: 5vw;
+}
+
+.textBtn {
+  font-weight: 300 !important;
+  font-family: "Roboto";
+  color: white !important;
+  font-size: 0.7em !important;
+}
