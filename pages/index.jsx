@@ -5,11 +5,12 @@ import User from "../src/components/user/User";
 import Avatar from "../src/components/avatar/Avatar";
 import Card from "../src/components/card/Card";
 import Trending from "../src/components/trending/Trending";
+import Auction from "../src/components/auction/Auction"
 export default function Index() {
   //return <User name="Vaskoi" verified={true} info="134 items"/>;
   return (
     <div>
-      <Trending
+      <Auction
         cards={[
           {
             name: "Ivy",
