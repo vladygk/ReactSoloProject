@@ -1,7 +1,7 @@
 import { Container, Grid, Select, MenuItem, InputLabel } from "@mui/material";
 import React, { useState } from "react";
 import Card from "../card/Card";
-import styles from "./Auction.module.scss";
+import styles from "./Auctions.module.scss";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function Trending({ cards=[] }) {
   const [selectedValue, setSelectedValue] = useState();
