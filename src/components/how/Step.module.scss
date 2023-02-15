@@ -1,11 +1,11 @@
 @use "../../styles/colors.scss";
 
 .container {
-  background-color: #181828;
+  background-color: colors.$background_default;
   position: relative;
   padding: 0;
-  margin-top:2vh;
-  
+  margin-top: 2vh;
+
   height: 30vh;
   width: 45vw !important;
   border-radius: 30px;
@@ -28,7 +28,7 @@
 
 .number {
   overflow: hidden;
-  background-color:  rgba($color: colors.$primary_main, $alpha: 0.1) ;
+  background-color: rgba($color: colors.$primary_main, $alpha: 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
   font-family: "Roboto";
   position: absolute;
   left: 0;
-color: rgba(255, 255, 255, 0.9);
+  color: colors.$text_primary;
   width: 37%;
   height: 100%;
   border-top-left-radius: 30px;
@@ -46,23 +46,23 @@ color: rgba(255, 255, 255, 0.9);
 
 .description {
   font-family: "Roboto";
-position: absolute;
-left:0;
-top:40%;
+  position: absolute;
+  left: 0;
+  top: 40%;
   font-weight: 300;
   height: 50%;
   overflow: hidden;
   display: flex;
   font-size: 1em;
-  width:75%;
+  width: 75%;
   margin-bottom: 5%;
   margin-top: 0;
 }
 
 .title {
   position: absolute;
-  left:0;
-  top:25%;
+  left: 0;
+  top: 25%;
   overflow: hidden;
   font-weight: 500;
   font-size: 1.72em;
@@ -70,9 +70,7 @@ top:40%;
   justify-content: left;
   font-family: "Roboto";
 }
-.gridContainer{
-  
-}
+
 .text {
   margin-top: 0;
 }
