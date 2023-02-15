@@ -5,12 +5,12 @@ import styles from "./How.module.scss";
 
 
 export default function Step({ number, title, description }) {
-  return<Container  maxWidth={false} className={styles.container}>
-    <Grid className={styles.gridContainer} container>
+  
+    return  <Grid className={styles.container} container>
     <Grid item className={styles.number}>{number}</Grid>
     <Grid item className={styles.info}>
         <div className={styles.titleStep}>{title}</div>
         <div className={styles.descriptionStep}><p className={styles.text}>{description}</p></div>
     </Grid>
-  </Grid></Container>;
+  </Grid>;
 }

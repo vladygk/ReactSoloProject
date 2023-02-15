@@ -17,6 +17,7 @@ export default function Index() {
       <How items={[
         {title:"First title", description:"Lorem ipsum dolor sit amet velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
         {title:"Second title", description:"Lorem ipsum dolor sit amet velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+        
         {title:"Third title", description:"Lorem ipsum dolor sit amet velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}]} title="HOW IT WORKS" link="/about" description="Lorem ipsum dolor sit amet velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
     </div>
   );
