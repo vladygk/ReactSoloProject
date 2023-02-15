@@ -4,7 +4,7 @@ import styles from "./How.module.scss";
 import Step from "./Step";
 export default function How({ description, title, items = [], link }) {
   return (
-    <>
+    
       <Grid container className={styles.wrapper}>
         <Grid item className={styles.title}>
           {title}
@@ -27,6 +27,6 @@ export default function How({ description, title, items = [], link }) {
           ))}
         
       </Grid>
-    </>
+    
   );
 }
