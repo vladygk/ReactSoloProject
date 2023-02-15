@@ -1,7 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
-import styles from "./How.module.scss";
-
+//import styles from "./How.module.scss";
+import styles from "./Step.module.scss";
 
 
 export default function Step({ number, title, description }) {
