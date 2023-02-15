@@ -9,7 +9,7 @@ import Auctions from "../src/components/auctions/Auctions"
 import Footer from "../src/components/footer/Footer"
 import Step from "../src/components/how/Step";
 import How from "../src/components/how/How";
-import Featured from "../src/components/feautured/Featured";
+import Featured from "../src/components/featured/Featured";
 export default function Index() {
   //return <User name="Vaskoi" verified={true} info="134 items"/>;
   return (
