@@ -29,7 +29,7 @@
   
   .number {
     overflow: hidden;
-    background-color: rgba($color: colors.$primary_main, $alpha: 0.1);
+    background-color: rgba(colors.$primary_main, 10%);
     display: flex;
     justify-content: center;
     align-items: center;
