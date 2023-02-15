@@ -1,4 +1,4 @@
-import { Container, Grid, Item } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import React from "react";
 import styles from "./Step.module.scss";
 
