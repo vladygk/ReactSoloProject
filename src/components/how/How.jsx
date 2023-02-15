@@ -16,7 +16,7 @@ export default function How({ description, title, items = [], link }) {
           LEARN MORE
         </Button>
 
-        <div className={styles.steps}>
+        
           {items.map((x, index) => (
             <Step
               key={index + 1}
@@ -25,7 +25,7 @@ export default function How({ description, title, items = [], link }) {
               description={x.description}
             />
           ))}
-        </div>
+        
       </Grid>
     </>
   );
