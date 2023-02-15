@@ -1,6 +1,6 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
-import styles from "./Step.module.scss";
+import styles from "./How.module.scss";
 
 
 
@@ -9,8 +9,8 @@ export default function Step({ number, title, description }) {
     <Grid className={styles.gridContainer} container>
     <Grid item className={styles.number}>{number}</Grid>
     <Grid item className={styles.info}>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.description}><p className={styles.text}>{description}</p></div>
+        <div className={styles.titleStep}>{title}</div>
+        <div className={styles.descriptionStep}><p className={styles.text}>{description}</p></div>
     </Grid>
   </Grid></Container>;
 }
