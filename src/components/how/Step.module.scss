@@ -1,3 +1,5 @@
+@use "../../styles/colors.scss";
+
 .container {
   background-color: #181828;
   position: relative;
@@ -26,7 +28,7 @@
 
 .number {
   overflow: hidden;
-  background-color: #1d193c;
+  background-color:  rgba($color: colors.$primary_main, $alpha: 0.9) ;
   display: flex;
   justify-content: center;
   align-items: center;
