@@ -1,0 +1,47 @@
+@use "../../styles/colors.scss";
+
+
+.wrapper{
+    position: relative;
+    margin: 5vh 0 8vh 0;
+    background-color: colors.$primary_main;
+    height: 87vh;
+}
+
+.btn{
+    border-radius: 30px !important;
+    position: absolute;
+    top:67%;
+    left:3%;
+width: 10%;
+height:7%;
+    background-color: colors.$text_primary !important;
+    color: colors.$primary_main !important;
+    font-family: 'Roboto' !important;
+    font-weight: 700 !important;
+    font-size: 1.1em !important;
+}
+.title{
+    position: absolute;
+    top:20%;
+    left:3%;
+    font-family: "Roboto";
+    font-size: 6em;
+    font-weight: 700;
+}
+.description{
+    font-family: "Roboto";
+    font-size: 1.7em;
+    width:30%;
+    position: absolute;
+    top:35%;
+    left:3%;
+}
+.steps{
+    position: absolute;
+    top:0;
+    right: 0;
+    
+    width: 50% !important;
+    
+}
