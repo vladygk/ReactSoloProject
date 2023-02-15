@@ -19,7 +19,7 @@ export default function How({ description, title, items = [], link }) {
         
           {items.map((x, index) => (
             <Step
-              key={index + 1}
+              key={index}
               number={index + 1}
               title={x.title}
               description={x.description}
