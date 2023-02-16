@@ -1,0 +1,60 @@
+@use "../../styles/colors.scss";
+
+
+.container-lighter{
+   
+    position: relative;
+    
+    width: 20vw;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(colors.$primary_main,0.5);
+}
+.number-lighter{
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-family: "Roboto";
+    height: 100%;
+    width:25%;
+    left:0;
+    background-color: rgba(colors.$primary_main,0.7);
+}
+
+.userContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    right: 35%;
+    
+}
+.number-darker{
+    font-family: "Roboto";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    height: 100%;
+    width:25%;
+    left:0;
+    background-color: rgba(colors.$primary_main,0.3);
+}
+
+.container-darker{
+   
+    position: relative;
+    width: 20vw;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(colors.$primary_main,0.2);
+}
