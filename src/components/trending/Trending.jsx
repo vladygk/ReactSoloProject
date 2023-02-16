@@ -30,7 +30,7 @@ export default function Trending({ cards=[] }) {
             <MenuItem value={"year"}>This year</MenuItem>
           </Select>
         </header>
-        <Grid
+        { cards.length>0 &&<Grid
           container
           direction="row"
           justifyContent="center"
@@ -73,7 +73,7 @@ export default function Trending({ cards=[] }) {
               timeLeft={cards[3].timeLeft}
             />
           </Grid>
-        </Grid>
+        </Grid>}
       </Container>
     </div>
   );

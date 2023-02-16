@@ -13,25 +13,33 @@ import Featured from "../src/components/featured/Featured";
 import Collector from "../src/components/collectors/Collector";
 import CollectorColumn from "../src/components/collectors/CollectorColumn";
 import TopCollectors from "../src/components/collectors/TopCollectors";
+import dataFeatured from "../data/featured.json";
+import dataTrending from "../data/trending.json";
+import dataUsers from "../data/users.json";
+import dataNfts from "../data/nfts.json";
+import { useState, useEffect } from "react";
+
 export default function Index() {
-  //return <User name="Vaskoi" verified={true} info="134 items"/>;
+  const [featuredCards, setFeaturedCards] = useState([]);
+  const [trendingCards, setTrendingCards] = useState([]);
+  const [userCards, setUserCards] = useState([]);
+  const [nftsCards, setNftsCards] = useState([]);
+  useEffect(() => {
+    setFeaturedCards(dataFeatured);
+    setTrendingCards(dataTrending);
+    setUserCards(dataUsers);
+    setNftsCards(dataNfts);
+  }, []);
+
   return (
     <div>
-      <TopCollectors
-        collectors={[
-        { name: "Vasko", nftsCount: 22, verified: true },
-        { name: "Vladi", nftsCount: 33, verified: true },
-        { name: "Taev", nftsCount: 0, verified: false },
-        { name: "Kamen", nftsCount: 2200, verified: false },
-        { name: "Eli", nftsCount: 13, verified: true },
-        { name: "Lena", nftsCount: 1, verified: false },
-        { name: "Gogeto", nftsCount: 681, verified: true },
-        { name: "Lena", nftsCount: 1, verified: false },
-        { name: "Gogeto", nftsCount: 681, verified: true },
-        { name: "Gogeto", nftsCount: 681, verified: true },
-        { name: "Lena", nftsCount: 1, verified: false },
-        { name: "Gogeto", nftsCount: 681, verified: true }]}
-      />
+      <Header />
+      <Featured />
+      <Trending />
+      <TopCollectors />
+      <How />
+      <Auctions />
+      <Footer />
     </div>
   );
 }
