@@ -32,14 +32,14 @@ export default function Index() {
   }, []);
 
   return (
-    <div>
+   <>
       <Header />
-      <Featured />
-      <Trending />
-      <TopCollectors />
+      <Featured items={featuredCards} />
+      <Trending cards={trendingCards} />
+      <TopCollectors collectors={userCards} />
       <How />
-      <Auctions />
+      <Auctions cards={nftsCards} />
       <Footer />
-    </div>
+      </>
   );
 }
