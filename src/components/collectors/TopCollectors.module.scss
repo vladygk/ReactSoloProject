@@ -1,0 +1,32 @@
+@use "../../styles/colors";
+.header{
+    font-size: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.select{
+    width: 15vw !important;
+    height: 7vh;
+    margin: 2.5vh;
+    border-radius: 50px;
+    background-color:colors.$primary_main;
+    width: 20% ;
+    text-indent: 10%;
+    font-size: 0.5em !important;
+}
+.title{
+    font-size: 1em !important;
+    margin: 0;
+    margin-bottom: 2%;
+    padding: 0;
+}
+.MuiOutlinedInput-notchedOutline{
+    border-style: none;
+}
+
+.gridContainer{
+    
+    display: flex !important;
+    justify-content:space-evenly;
+    
+}
