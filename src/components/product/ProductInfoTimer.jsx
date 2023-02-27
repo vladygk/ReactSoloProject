@@ -5,7 +5,7 @@ import Countdown from "react-countdown";
 export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
   const isActive = timeEnd ? "active" : "notActive";
 
-  if (isActive) {
+  if (timeEnd) {
     return (
       <div className={styles["product-info-timer"]}>
         <label className={styles["title"]}>Ends in</label>
