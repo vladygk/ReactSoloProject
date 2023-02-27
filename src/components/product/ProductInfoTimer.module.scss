@@ -8,12 +8,12 @@
 }
 .active{
     background-color: colors.$secondary_main;
-    display: block;
+    visibility:visible;
     
 }
 .notActive{
     
-    display: none;
+    visibility:hidden;
 }
 .timer{
     //background-color: colors.$secondary_main;

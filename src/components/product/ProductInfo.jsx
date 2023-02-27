@@ -30,7 +30,7 @@ export default function ProductInfo({
         <ProductInfoPrice amount={price} currency={currency} />
         <ProductInfoLikes amount={likes}/>
         </Stack>
-        <Grid container>
+        <Grid columns={{ xs: 7, md: 5 }} container>
             <Grid item> <ProductInfoCreator name={creator.name} avatar={cretor.avatar} verified={creator.verified}/></Grid>
             <Grid item> <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd}/></Grid>
         </Grid>
