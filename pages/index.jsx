@@ -34,7 +34,7 @@ export default function Index() {
 
   return (
    <>
-      <ProductInfoTimer />
+      <ProductInfoTimer timeEnd="10000"/>
       </>
   );
 }
