@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from 'ProductInfoTimer.module.scss'
+import styles from './ProductInfoTimer.module.scss'
 import Countdown from 'react-countdown';
  
 export default function ProductInfoTimer({timeEnd,onTimeEnd }) {
