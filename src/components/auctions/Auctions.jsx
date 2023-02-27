@@ -39,8 +39,9 @@ export default function Trending({ cards=[] }) {
         >
           {cards.map(x=><Grid item>
             <Card
-              user={x.owner}
+              user={x.user}
               name={x.name}
+              likes={x.likes}
               price={x.price}
               currency={x.currency}
               timeLeft={x.timeLeft}

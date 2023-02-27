@@ -3,6 +3,7 @@
     "id": 389,
     "name": "Gorgeous Fresh Bike",
     "price": 1.236,
+    "likes": 5,
     "owner": {
       "id": 424,
       "username": "Aubree38",
@@ -33,7 +34,7 @@
         "updated_at": "2021-10-22T08:29:19.312Z"
       }
     },
-    "likes": 5,
+    
     "token_id": "0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe.jpg",
     "currency": "ETH",
     "featured": false,

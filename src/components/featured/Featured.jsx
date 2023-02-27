@@ -12,21 +12,20 @@ const router = useRouter();
       <ImageList 
       className={styles.imageList}
         
-        variant="quilted"
-        cols={6}
-        rows={2}
+        variant="standard"
+        cols={2}
+        row={2}
         gap={10}
       >
-        {items.map((item) => (
+        {items.map((item,index) => (
           <ImageListItem
             
-            key={item.title}
-            cols={item.cols || 1}
-            rows={item.rows || 1}
+            key={index}
+            
           >
             <img
             onClick={()=>{router.push(item.href)}}
-            className={styles.image}
+            className={index===0? styles["big-image"] :styles.image}
              src={item.image}
               alt={item.title}
               loading="lazy"

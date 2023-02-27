@@ -11,10 +11,7 @@ export default function Card({
   name,
   likes = 0,
   mediaUrl = "./images/nft.jpg",
-  user: {
-    avatar: { url },
-    verified,
-  },
+  user ,
   price,
   currency,
   timeLeft
@@ -22,7 +19,7 @@ export default function Card({
   return (
     <div >
       <MCard className={styles.card} >
-        <div className={styles.avatar}>  <Avatar url={url} size={75} verified={verified} /></div>
+        <div className={styles.avatar}>  <Avatar url={user? user.avatar:null} size={75} verified={user? user.verified : false} /></div>
 
         {timeLeft&&<div className={styles.timerWrapper}><Countdown className={styles.timer} date={Date.now() + timeLeft} /></div>}
 
