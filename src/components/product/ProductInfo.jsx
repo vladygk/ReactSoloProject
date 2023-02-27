@@ -9,11 +9,7 @@ import ProductInfoTimer from "./ProductInfoTimer"
 import { Grid, Stack } from '@mui/material'
 export default function ProductInfo({
     title,
-    creator: {
-           //"name": String,
-           //"avatar": String,
-           //"verified": Boolean
-    },
+    creator,
     price,
     currency,
     likes,
