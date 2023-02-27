@@ -18,6 +18,7 @@ import dataTrending from "../data/trending.json";
 import dataUsers from "../data/users.json";
 import dataNfts from "../data/nfts.json";
 import { useState, useEffect } from "react";
+import ProductInfoTitle from "../src/components/product/ProductInfoTitle";
 
 export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
@@ -33,13 +34,7 @@ export default function Index() {
 
   return (
    <>
-      <Header />
-      <Featured items={featuredCards} />
-      <Trending cards={trendingCards} />
-      <TopCollectors collectors={userCards} />
-      <How />
-      <Auctions cards={nftsCards} />
-      <Footer />
+      <ProductInfoTitle text="TITTTTLE"/>
       </>
   );
 }
