@@ -7,11 +7,12 @@ export default function ProductInfoTimer({timeEnd,onTimeEnd }) {
     const isActive =timeEnd? 'active':'notActive';
   return (
     <div className={styles['product-info-timer']}>
-        <label className={styles['title']} >Ends in</label>
-        <div className={`${styles[isActive]} ${styles['timer']} `}>
+        
+        {timeEnd&&  <label className={styles['title']} >Ends in</label> && <div className={`${styles[isActive]} ${styles['timer']} `}>
+       
             
-           {timeEnd&& <Countdown onComplete={onTimeEnd} date={timeEnd} />}
-        </div>
+            <Countdown onComplete={onTimeEnd} date={timeEnd} />
+        </div>}
     </div>
   )
 }
