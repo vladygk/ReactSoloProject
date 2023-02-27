@@ -6,7 +6,16 @@
 .title{
     border: 1px solid blue;
 }
-.timer{
-    
+.active{
     background-color: colors.$secondary_main;
+    display: block;
+    
+}
+.notActive{
+    
+    display: none;
+}
+.timer{
+    //background-color: colors.$secondary_main;
+    border: 1px solid blue;
 }

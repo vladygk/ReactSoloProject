@@ -4,16 +4,14 @@ import Countdown from 'react-countdown';
  
 export default function ProductInfoTimer({timeEnd,onTimeEnd }) {
 
-    if(timeEnd){
+    const isActive =timeEnd? 'active':'notActive';
   return (
     <div className={styles['product-info-timer']}>
         <label className={styles['title']} >Ends in</label>
-        <div className={styles['timer']}>
+        <div className={`${styles[isActive]} ${styles['timer']} `}>
             
             <Countdown onComplete={onTimeEnd} date={timeEnd} />
         </div>
     </div>
-  )}else{
-    return  <div className={styles['product-info-timer']}></div>
-  }
+  )
 }
