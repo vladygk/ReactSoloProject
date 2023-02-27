@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from "./ProductInfo.module.scss"
+import ProductInfoTitle from "./ProductInfoTitle"
+import ProductInfoPrice from "./ProductInfoPrice"
+import ProductInfoStatus from "./ProductInfoStatus"
 export default function ProductInfo({
     title,
     creator: {
@@ -15,6 +18,11 @@ export default function ProductInfo({
     isLive
     }) {
   return (
-    <div>ProductInfo</div>
+    <div className={styles['product-info']}>
+        <ProductInfoTitle text={title}/>
+        <ProductInfoPrice amount={price} currency={currency} />
+        <ProductInfoStatus/>
+
+    </div>
   )
 }
