@@ -18,8 +18,8 @@ export default function ProductInfo({
   isLive,
 }) {
   return (
-    
-      <Grid className="product-info" columns={{ xs: 7, md: 5 }} container>
+    <div className={styles["product-info"]}>
+      <Grid container>
         <Grid item>
           <ProductInfoTitle text={title} />
         </Grid>
@@ -36,19 +36,17 @@ export default function ProductInfo({
           </Stack>
         </Grid>
 
-        <Grid item>
-          {" "}
+        <Grid xs={5} item>
           <ProductInfoCreator
             name={creator.name}
             avatar={creator.avatar}
             verified={creator.verified}
           />
         </Grid>
-        <Grid item>
-          {" "}
+        <Grid xs={7} item>
           <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd} />
         </Grid>
       </Grid>
-    
+    </div>
   );
 }
