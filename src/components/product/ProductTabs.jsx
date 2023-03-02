@@ -13,8 +13,8 @@ export default function ProductTabs({ text, bids }) {
     <div className={styles["product-tabs"]}>
       <TabContext value={value}>
         <TabList onChange={handleChange}>
-          <Tab className="tab-details" label="Details" value="1" />
-          <Tab className="tab-bids " label="Bids" value="2" />
+          <Tab className={styles["tab-details"]} label="Details" value="1" />
+          <Tab className={styles["tab-bids"]} label="Bids" value="2" />
         </TabList>
         <TabPanel value="1">{text}</TabPanel>
         <TabPanel value="2">
@@ -31,7 +31,7 @@ export default function ProductTabs({ text, bids }) {
                 </TableCell>
                 <TableCell>{bid.amount}</TableCell>
                 <TableCell>
-                  {formatDistance(bid.date, Date.now(), { addSuffix: true })}
+                  {formatDistance(parseISO( bid.date,"HH:mm:ss"), Date.now(), { addSuffix: true })}
                 </TableCell>
               </TableRow>;
             })}
