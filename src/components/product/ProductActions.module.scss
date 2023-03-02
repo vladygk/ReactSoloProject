@@ -1,5 +1,10 @@
+@use "../../styles/colors.scss";
+
+
 .button{
     display: block;
+    color: colors.$success_main;
+    background-color: colors.$success_main;
 }
 .product-actions{
     border: 1pt solid white;
