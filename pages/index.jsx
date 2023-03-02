@@ -35,7 +35,15 @@ export default function Index() {
 
   return (
    <>
-      <ProductTabs bids={[]}/>
+      <ProductTabs bids={[{
+       user: {
+          avatar : "",
+          name: "Vladi",
+          verified: true 
+       },
+       amount: 1000,
+       date: "2021-10-22T08:29:19.936Z"
+    }]}/>
       </>
   );
 }

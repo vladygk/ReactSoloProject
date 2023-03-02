@@ -1,4 +1,5 @@
-import { TabContext, TabList, TabPanel } from "@mui/lab";
+import { TabList, TabPanel } from "@mui/lab";
+import {TabContext} from "@mui/lab";
 import { Tab, Table, TableCell, TableRow } from "@mui/material";
 import React, { useState } from "react";
 import styles from "./ProductTabs.module.scss";
@@ -21,7 +22,7 @@ export default function ProductTabs({ text, bids }) {
           <Table>
             {bids.map((bid, index) => {
 
-              <TableRow className = {`${styles[`table-row-${index}`]} ${styles[`${index %2 ==0? 'even':'odd' }`]}`}>
+              return <TableRow key={index} className = {styles[`table-row-${index}`]}>
                 <TableCell>
                   <User
                     name={bid.user.name}
