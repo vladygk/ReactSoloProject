@@ -36,7 +36,7 @@ export default function Index() {
 
   return (
    <>
-      <ProductActions isLive={false}/>
+      <ProductActions isLive={true}/>
       </>
   );
 }
