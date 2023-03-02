@@ -18,11 +18,11 @@ export default function ProductInfo({
     isLive
     }) {
   return (
-    <div className={styles['product-info']}>
+    <div className='product-info'>
         <ProductInfoTitle text={title}/>
 
         {isLive && <ProductInfoStatus/>}
-        <Stack className={styles.stats}>
+        <Stack className="stats">
         <ProductInfoPrice amount={price} currency={currency} />
         <ProductInfoLikes amount={likes}/>
         </Stack>
