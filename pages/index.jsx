@@ -20,6 +20,7 @@ import dataNfts from "../data/nfts.json";
 import { useState, useEffect } from "react";
 import ProductInfoTimer from "../src/components/product/ProductInfoTimer";
 import ProductTabs from "../src/components/product/ProductTabs";
+import ProductActions from "../src/components/product/ProductActions";
 
 export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
@@ -35,15 +36,7 @@ export default function Index() {
 
   return (
    <>
-      <ProductTabs bids={[{
-       user: {
-          avatar : "",
-          name: "Vladi",
-          verified: true 
-       },
-       amount: 1000,
-       date: "2021-10-22T08:29:19.936Z"
-    }]}/>
+      <ProductActions isLive={false}/>
       </>
   );
 }

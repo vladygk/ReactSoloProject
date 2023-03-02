@@ -3,8 +3,8 @@
 
 .button{
     display: block;
-    color: colors.$success_main;
-    background-color: colors.$success_main;
+    color: colors.$success_main !important;
+    background-color: colors.$success_main !important;
 }
 .product-actions{
     border: 1pt solid white;
