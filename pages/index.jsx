@@ -19,6 +19,7 @@ import dataUsers from "../data/users.json";
 import dataNfts from "../data/nfts.json";
 import { useState, useEffect } from "react";
 import ProductInfoTimer from "../src/components/product/ProductInfoTimer";
+import ProductTabs from "../src/components/product/ProductTabs";
 
 export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
@@ -34,7 +35,7 @@ export default function Index() {
 
   return (
    <>
-      <ProductInfoTimer timeEnd=""/>
+      <ProductTabs bids={[]}/>
       </>
   );
 }

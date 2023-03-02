@@ -1,0 +1,12 @@
+@use "../../styles/colors.scss";
+
+.even{
+background-color: colors.$primary_main;
+}
+.odd{
+    background-color: colors.$background_default;
+}
+
+.product-tabs{
+    border:1px solid white;
+}
