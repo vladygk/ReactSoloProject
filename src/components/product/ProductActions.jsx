@@ -11,8 +11,12 @@ onBid}) {
   return (
     <div className={styles["product-actions"]}>
 <Grid container>
-    <Grid  sx={7} item><Button variant='contained' disabled={isLive? true: false} onClick={onBuy} className={styles["button"]}>{`Buy for ${buyAmount} ${currency}`}</Button></Grid>
-    <Grid  sx={5} item><Button variant='outlined' disabled={isLive? true: false} onClick={onBid} className={styles["button"]}>{`Place a Bid fro ${bidAmount} ${currency}`}</Button></Grid>
+    <Grid  xs={7} item>
+        <Button variant='contained' disabled={isLive !== undefined? false: true} onClick={onBuy} className={styles["button"]}>{`Buy for ${buyAmount} ${currency}`}</Button>
+    </Grid>
+    <Grid  xs={5} item>
+        <Button variant='outlined' disabled={isLive !== undefined? false: true} onClick={onBid} className={styles["button"]}>{`Place a Bid fro ${bidAmount} ${currency}`}</Button>
+    </Grid>
 </Grid>
     </div>
   )
