@@ -22,7 +22,7 @@ export default function ProductTabs({ text, bids }) {
           <Table>
             {bids.map((bid, index) => {
 
-              return <TableRow key={index} className = {styles[`table-row-${index}`]}>
+              return <TableRow key={index} className = {`table-row-${index}`}>
                 <TableCell>
                   <User
                     name={bid.user.name}
