@@ -10,7 +10,7 @@ import ProductInfo from "./ProductInfo"
 
 
 
-export default function ProductContainer({name,bids,source,currency,price,owner,details,auction_end}) {
+export default function ProductContainer({name,bids,source,currency,price,likes,owner,details,auction_end}) {
   return (
     <div className={styles['product-container']}>
 <Grid container>
