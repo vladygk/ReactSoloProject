@@ -24,7 +24,7 @@ export default function Product() {
 
 
   return (
-    <div>
+    <>
         <Header/>
         <ProductContainer name={productData.name} 
                           bids={productData.bids}
@@ -42,7 +42,7 @@ export default function Product() {
                           onBuy={productData.onBuy}
                           onTimeEnd={productData.onTimeEnd} />
         <Footer/>
-    </div>
+    </>
   )
 }
 
