@@ -21,7 +21,7 @@ export default function ProductContainer({name,bids,source,currency,price,likes,
         <ProductImage url={source.url}/>
     </Grid>
     <Grid xs={5} item>
-        <ProductActions buyAmount={buyAmount} onBuy={onBuy} onBid={onBid} bidAmount={bidAmount} currency={currency}  />
+        <ProductActions buyAmount={buyAmount} onBuy={onBuy} onBid={onBid} bidAmount={bidAmount} currency={currency} isLive={isLive} />
     </Grid>
     <Grid xs={5} item>
         <ProductInfo title={name} creator={owner} price={price} currency={currency} onTimeEnd={onTimeEnd} likes={likes} timeEnd={auction_end} isLive={isLive} />
