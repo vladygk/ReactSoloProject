@@ -14,7 +14,7 @@ export default function ProductContainer({name,bids,source,currency,price,owner,
   return (
     <div className={styles['product-container']}>
 <Grid container>
-    <Grid xs={7} item>
+    <Grid xs={6} item>
         <ProductTabs text={details} bids={bids}/>
     </Grid>
     <Grid xs={5} item>
