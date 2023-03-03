@@ -10,7 +10,7 @@ import ProductInfo from "./ProductInfo"
 
 
 
-export default function ProductContainer({name,bids,source,currency,price,likes,owner,details,auction_end,isLive,buyAmount,bidAmount,onBid,onBuy}) {
+export default function ProductContainer({name,bids,source,currency,price,likes,owner,details,auction_end,isLive,buyAmount,bidAmount,onBid,onBuy,onTimeEnd}) {
   return (
     <div className={styles['product-container']}>
 <Grid container>
@@ -21,10 +21,10 @@ export default function ProductContainer({name,bids,source,currency,price,likes,
         <ProductImage url={source.url}/>
     </Grid>
     <Grid xs={5} item>
-        <ProductActions />
+        <ProductActions buyAmount={buyAmount} onBuy={onBuy} onBid={onBid} bidAmount={bidAmount} currency={currency}  />
     </Grid>
     <Grid xs={5} item>
-        <ProductInfo title={name} creator={owner} price={price} currency={currency} likes={likes} timeEnd={auction_end}  />
+        <ProductInfo title={name} creator={owner} price={price} currency={currency} onTimeEnd={onTimeEnd} likes={likes} timeEnd={auction_end} isLive={isLive} />
     </Grid>
 </Grid>
     </div>
