@@ -21,6 +21,7 @@ import { useState, useEffect } from "react";
 import ProductInfoTimer from "../src/components/product/ProductInfoTimer";
 import ProductTabs from "../src/components/product/ProductTabs";
 import ProductActions from "../src/components/product/ProductActions";
+import ProductContainer from "../src/components/product/ProductContainer";
 
 export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
@@ -36,7 +37,7 @@ export default function Index() {
 
   return (
    <>
-      <ProductActions isLive={true}/>
+      <ProductContainer owner={{name:'Vasko',avatar:'#',verified:true}} source={{url:'#'}} bids={[]}/>
       </>
   );
 }
